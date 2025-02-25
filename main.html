@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Grid Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 600px;
+            border: 5px solid rgb(4, 255, 4);
+            background-color: rgb(41, 0, 0);
+        }
+        .row {
+            border: 5px solid rgb(255, 188, 188);
+            height: 200px;
+        }
+        .col {
+            border: 2px dotted rgb(38, 38, 43);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bg-teal { background-color: teal; }
+        .bg-thistle { background-color: thistle; }
+        .bg-tomato { background-color: tomato; }
+        .bg-turquoise { background-color: turquoise; }
+        .bg-violet { background-color: violet; }
+        .bg-yellowgreen { background-color: yellowgreen; }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container mt-3">
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="col-md-4 col-sm-6 bg-teal">Row1 col1</div>
+        <div class="col-md-8 col-sm-6 bg-thistle">Row1 col2</div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+        <div class="col-md-4 offset-md-2 col-sm-6 bg-tomato">Row2 col1</div>
+        <div class="col-md-4 col-sm-6 bg-turquoise">Row2 col2</div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row justify-content-center text-center">
+        <div class="col-md-4 col-sm-6 bg-violet">Row3 col1</div>
+        <div class="col-md-4 col-sm-6 bg-yellowgreen">Row3 col2</div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
